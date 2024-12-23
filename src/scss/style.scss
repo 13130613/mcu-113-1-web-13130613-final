@@ -4,6 +4,7 @@
 @import "./about";
 @import "./skill";
 @import "./contact";
+@import "./footer";
 
 :root {
   --body-color: rgb(250, 250, 250);
@@ -27,7 +28,6 @@ body {
     width: 100%;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -46,23 +46,33 @@ body {
 
   .section {
     padding-block: 6em;
-  }
 
-  .top-header {
-    text-align: center;
-    margin-bottom: 5em;
+    .top-header {
+      text-align: center;
 
-    h1 {
-      font-weight: 600;
-      margin-bottom: 10px;
+      margin-bottom: 5em;
+
+      h1 {
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      span {
+        color: #999;
+      }
     }
-
-    span {
-      color: #999;
-    }
   }
-
   i {
     font-size: 16px;
   }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 5px 0px rgb(0, 0, 0, 0.25);
+  cursor: pointer;
 }
